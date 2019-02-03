@@ -1,7 +1,7 @@
 {
-  "name": "csvjson-csv2json",
-  "description": "Converts CSV to JSON. Powers the most used online tool CSVJSON https://www.csvjson.com/csv2json. Used by thousands everyday.",
-  "version": "5.0.1",
+  "name": "csvjson-json2csv",
+  "description": "Converts JSON to CSV. Powers the most used online tool CSVJSON https://www.csvjson.com/json2csv. Used by thousands everyday.",
+  "version": "1.0.1",
   "author": "Martin Drapeau <martindrapeau@gmail.com>",
   "contributors": [],
   "dependencies": { },
@@ -10,7 +10,7 @@
   "keywords": ["csv", "json", "parse"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/martindrapeau/csvjson-csv2json.git"
+    "url": "git://github.com/martindrapeau/csvjson-json2csv.git"
   },
   "license": "MIT"
 }
