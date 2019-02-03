@@ -3,15 +3,17 @@ CSVJSON json2csv() function
 
 Single function `json2csv` to convert JSON to CSV. Self contained without dependencies. Used to power CSVJSON the online tool found at [www.csvjson.com/json2csv](https://www.csvjson.com/json2csv). Used by thousands everyday.
 
-[npm package here](https://www.npmjs.com/package/csvjson-json2csv).
+[npm package here](https://www.npmjs.com/package/csvjson-json2csv)
 
 # Usage
+
 Simply call `json2csv(json, options)` passing a JavaScript object. Use the `options` hash to pass on some switches:
 - `separator`: Character which acts as separator. For semi-colon pass `;`. For TSV pass a tab `\t`. Default is `,`.
 - `flatten`: Boolean indicating whether to flatten nested arrays or not. Default is `false`.
 - `output_csvjson_variant`: Boolean indicating whether to output objects and arrays as is as per the [CSVJSON format variant](http://csvjson.org/). Default is `false`.
 
-Node example:
+## Node example
+
 ```
 const json2csv = require('./json2csv.js');
 
@@ -73,8 +75,10 @@ console.log(csv);
 
 ```
 
-Browser example:
+## Browser example
+
 Note: In the browser, global namespace `CSVJSON` is created. It contains the `json2csv` function.
+
 ```
 <script type="text/javascript" src="csv2json.js"></script>
 <script>
@@ -153,7 +157,8 @@ In both cases, you would get this in the console:
 
 You can of course test all options online on [www.csvjson.com/json2csv](https://www.csvjson.com/json2csv).
 
-# Flattening
+## Flattening
+
 By default `json2csv` assumes you have an array of objects. If your array containes nested objects, use the `flatten` option. For example:
 
 ```
@@ -211,7 +216,7 @@ Will produce this:
 1,"tree1",2,"branch2",2,"leave2"
 ```
 
-# Tests
+## Tests
 Run the tests in your browser by opening `test-browser.html`.
 
 Run the tests through node:
@@ -220,5 +225,7 @@ node test-node.js
 ```
 
 # Companion functions
+
 [csv2json](https://github.com/martindrapeau/csvjson-csv2json) to convert CSV to JSON. [npm package here](https://www.npmjs.com/package/csvjson-csv2json).
+
 [JSON2_mod](https://github.com/martindrapeau/json2-mod) to beautify your JSON. [npm package here](https://www.npmjs.com/package/json2-mod).
