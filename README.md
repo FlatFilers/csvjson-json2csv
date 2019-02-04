@@ -228,4 +228,6 @@ node test-node.js
 
 [csv2json](https://github.com/martindrapeau/csvjson-csv2json) to convert CSV to JSON. [npm package here](https://www.npmjs.com/package/csvjson-csv2json).
 
-[JSON2_mod](https://github.com/martindrapeau/json2-mod) to beautify your JSON. [npm package here](https://www.npmjs.com/package/json2-mod).
+[json_beautifier](https://github.com/martindrapeau/csvjson-json_beautifier) to beautify and format your JSON. [npm package here](https://www.npmjs.com/package/csvjson-json_beautifier).
+
+[JSON2_mod](https://github.com/martindrapeau/json2-mod) a replacement of `JSON` with more options to format your JSON. [npm package here](https://www.npmjs.com/package/json2-mod).
