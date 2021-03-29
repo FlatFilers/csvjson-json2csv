@@ -96,8 +96,8 @@
 	function convert(data, options) {
 		options || (options = {});
 		
-    if (!isObject(data)) throw errorNotAnArray;
-    if (!Array.isArray(data)) data = [data];
+	if (!isObject(data) && !Array.isArray(data)) throw errorNotAnArray;
+	if (!Array.isArray(data)) data = [data];
 		
     var separator = options.separator || ',';
 		if (!separator) throw errorMissingSeparator;
